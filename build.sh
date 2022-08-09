@@ -15,6 +15,8 @@ if [ "${GOOS}" == 'windows' ]; then
 EXT='.exe'
 fi
 
+ls -l
+
 if [ -x "./build.sh" ]; then
   OUTPUT=`./build.sh "${CMD_PATH}"`
 else

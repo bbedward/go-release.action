@@ -2,6 +2,7 @@
 
 set -eux
 
+git config --global --add safe.directory '*'
 
 OS=`egrep '^ID=' /etc/os-release | cut -d= -f2`
 if [ "${OS}" == "ubuntu" ]; then  # If we're not on Alpine we're probably using a Github runner.
